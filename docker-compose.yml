@@ -2,16 +2,16 @@ version: '3.8'
 
 services:
   course-service:
-    build: ./course-service
+    image: sarasaragozin/course-service:latest
     ports:
       - "3001:3001"
 
   student-service:
-    build: ./student-service
+    image: sarasaragozin/student-service:latest
     ports:
       - "3002:3002"
 
   assessment-service:
-    build: ./assessment-service
+    image: sarasaragozin/assessment-service:latest
     ports:
       - "3003:3003"

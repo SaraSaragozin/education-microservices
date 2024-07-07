@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  course-service:
+    build: ./course-service
+    ports:
+      - "3001:3001"
+
+  student-service:
+    build: ./student-service
+    ports:
+      - "3002:3002"
+
+  assessment-service:
+    build: ./assessment-service
+    ports:
+      - "3003:3003"
